@@ -1,0 +1,49 @@
+''' 
+Dia 28/03/2026
+Manipulação de Strings
+Autor: Vinícius Fagundes
+'''
+
+#Algumas funções que podem ser utilizadas para manipular o conjunto de caracteres 
+
+nome = 'Fundação Liberato'
+
+print(nome)
+
+#Tudo para maiúsculo
+nome=nome.upper() # Percebe-se que só aqui estou mudando realmente o valor de "nome", as próximas serão somente modificações na impressão
+print(nome)
+
+#Tudo para minusculo
+print(nome.lower())
+
+#Para deixar as letras inicias em maiúsculo
+print(nome.title())
+
+#Para tirar espaços em brancos 
+print(nome.strip( )) # Se quisesse tirar tudo da direita "rstrip" - "lstrip" para esquerda - Apenas para as partes extremas da string
+
+#Para retirar os espaços do meio por exemplo, podemos trocar o caracter do espaçpo por nada
+print(nome.replace(' ',''))
+
+# Pode completar uma certa quantidade de caracterres que tu deseja(informada na função) pelos dois lados, deixando a string principal no meio. O caracter para completar o numero, tu decide:
+print(nome.center(30,"+")) #No caso, se o nome é: Fundação liberato - já contém 17 caracateres, e serão adicioandos 6 '+' de um lado e 7 do outro
+
+#Da para adicionar um caractere entre os caractere da string fazendo assim
+print('@'.join(nome))
+
+#para dividir uma string podemos:
+print(nome[:7]) #Aqui printamos desde o início até o indiice digitado. O que importa é a posição de ':', permitindo começar de um caracter e ir até o final...
+
+#Para inverter a string
+nomeinvertido=nome[::-1]
+print(nomeinvertido)
+
+#multilinhas dentro de uma mesnsagem
+mensagem = f'''Olá, tudo bem {nome}?
+               Espero que sim!'''
+print(mensagem)
+
+#Trasnformando string em uma lista -> divide a string em uma lista de palavras, usando o espaço como separador por padrão
+nome1 = nome.split() 
+print(nome1)

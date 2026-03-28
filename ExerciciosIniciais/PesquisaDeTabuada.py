@@ -22,4 +22,4 @@ while num != 0:
         print("Leaving...")
     else:
         print("Please enter a value between 1 and 10")
-        #Preciso arrumar essa parte de 0 e até 10 para que funcione corretamente e consiga sair quando quiser (não deu tempo na aula)
+        
