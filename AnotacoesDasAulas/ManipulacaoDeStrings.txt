@@ -20,7 +20,7 @@ print(nome.lower())
 #Para deixar as letras inicias em maiúsculo
 print(nome.title())
 
-#Para tirar espaços em brancos 
+#Para tirar espaços em brancos dos lados
 print(nome.strip( )) # Se quisesse tirar tudo da direita "rstrip" - "lstrip" para esquerda - Apenas para as partes extremas da string
 
 #Para retirar os espaços do meio por exemplo, podemos trocar o caracter do espaçpo por nada
@@ -47,3 +47,20 @@ print(mensagem)
 #Trasnformando string em uma lista -> divide a string em uma lista de palavras, usando o espaço como separador por padrão
 nome1 = nome.split() 
 print(nome1)
+
+
+
+#LISTAS
+
+#Da para chamar o valor de uma lista com o valor negativo, informando que está considerando de trás para frente
+lista = [2,2,'Ford']
+print(lista[-1]) #Ford
+
+#Para fazer uma matriz por exemplo, coloca uma lista dentro de outra
+matriz = [
+    [1,2,3]
+    [2,'a',4]
+    [3,'b',5]
+] #Aí pode printar só uma linha ou algo assim
+
+#Tem mais alguma estruturas legais para colocar aqui - preciso implementar alguma função de listas no projeto dos caracteres - ou fazer um projetinho separado

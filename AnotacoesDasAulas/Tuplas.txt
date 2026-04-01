@@ -1,0 +1,28 @@
+"""
+Tuplas
+"""
+#Praticamente igual a listas, porém agora os dados são IMUTÁVEIS
+#Não vai ter a mesma quantidade de funções justamente por isso
+#Ao inves de colchetes é parenteses
+#São geralmente mais rapidas e ocupam menos memoria
+
+#Exemplos
+frutas = ("laranja","goiaba","manga","melancia")
+print(frutas) # Printa na tela os parenteses, aspas e virgulas juntos.
+
+letras = tuple("Python") #separa a palavra em letras separadas
+print(letras)
+
+numeros = tuple([1,2,3,4]) #a função tuple precisa receber uma lista porque ela só espera 1 argumento, e um int não é interável
+print(numeros)
+
+#Metodo Count - Counta quantas vezes o valor aparece em uma tupla - também tem na lista
+cores = ("verde","amarelo","verde")
+
+print(cores.count("verde")) #2
+
+#Metodo index - retorna a posição da PRIMEIRA aparição - também tem na lista
+print(cores.index("verde")) #0
+
+#Metodo Len - retorna o tamanho - também tem na lista
+print(len(cores)) #3
