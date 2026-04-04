@@ -5,4 +5,4 @@ O principal foco do curso é na linguagem de programação Python e, apesar de j
 Pastas:
 - AnotacoesDasAulas     ->  Anotações feitas durante as aulas
  
-- ExerciciosIniciais    ->  Exercícios desenvolvidos com o intuito de trabalhar com as funções básicas da programação, se adequando à sintaxe do Python e seus diferenciais.
+- ExerciciosIniciais    ->  Pequenos projetos pensados e propostos(por mim) a partir dos exercícios propostos pelo curso, desenvolvidos com o intuito de trabalhar com as funções básicas da programação, se adequando à sintaxe do Python e seus diferenciais.
