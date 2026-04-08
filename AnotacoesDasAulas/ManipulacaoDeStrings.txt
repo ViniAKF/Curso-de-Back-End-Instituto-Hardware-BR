@@ -64,3 +64,6 @@ matriz = [
 ] #Aí pode printar só uma linha ou algo assim
 
 #Tem mais alguma estruturas legais para colocar aqui - preciso implementar alguma função de listas no projeto dos caracteres - ou fazer um projetinho separado
+
+
+#Exercício ---> ContagemDeCaracteres.py

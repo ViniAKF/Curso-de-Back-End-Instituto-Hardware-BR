@@ -26,3 +26,5 @@ print(cores.index("verde")) #0
 
 #Metodo Len - retorna o tamanho - também tem na lista
 print(len(cores)) #3
+
+#Exercicio ComparacaoDeDesempenho.py

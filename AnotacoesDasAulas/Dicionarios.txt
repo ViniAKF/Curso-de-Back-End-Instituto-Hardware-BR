@@ -1,0 +1,45 @@
+"""
+Aula do dia 08/04
+
+Dicionários
+- Conjunto de variáveis separados por chaves
+"""
+
+pessoa={'nome':'Vinicius', 'idade' : "19",}
+print(pessoa)
+
+#Podemos criar desse jeito também:
+pessoa = dict(nome = 'Carlitos', idade = 13) #Aqui no caso substituiria o valor de cima.
+print(pessoa)
+
+#Para acessar um dado específico
+print(f'Nome da pessoa : {pessoa["nome"]}')
+
+
+#Podemos adicionar mais chaves ao dicionário
+pessoa['telefone']='983458764'
+print(f'Numero de telefone : {pessoa['telefone']}')
+print(pessoa)
+
+# Aqui eu estaria adicionando outros valores -- Mas teria como adicionar sem substituir ????
+pessoa['nome']='Andre'
+pessoa['idade']=15
+pessoa['telefone']='091823498'
+
+print(pessoa)
+
+"""
+Dicionarios aninhados 
+- Permite que olhe as variaveis individualizando cada conjunto de dados por uma outra chave
+"""
+nome="nome" #Teste
+contatos = {"Junior@gmail.com": {f"{nome}":"Junior","idade": 25}, "Amanda@gmail.com" : {"nome":"Amanda", "idade":25}}
+
+#Para iterar os dicionários faz com o 'for' mesmo
+for chave in contatos:
+    print(chave,contatos[chave])
+
+for chave,valor in contatos.items(): #Faz isso para que possa pegar tanto a chave quanto o valor direto
+    print(chave,valor)
+
+    #Exercicio de hoje já fala de dicionários em listas - acho que assim é mais fácil -- PesquisandoDados.py
