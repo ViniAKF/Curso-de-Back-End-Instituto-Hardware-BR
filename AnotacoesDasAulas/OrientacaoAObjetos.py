@@ -84,4 +84,77 @@ c = ContaPrivado(100)
 c.depositar(50)
 print(c.ver_saldo())
 
-#PRojeto - ConferenciaDeAprovacao.py
+#Pequeno projeto para prática
+
+"""
+Aula do dia 18/04
+
+Continuação do conteúdo
+"""
+
+#Herança Simples
+#Uma classe filha herda atributos e métodos apenas d uma classe pai
+#Para que isso aconteça, você cria uma nova classe passando o nme da classe do pai entre parenteses --a classe filha poode adicionar novos métodos ou sobreescrever os existentes
+
+class Animal: 
+    def comer(self):
+        print("Este animal está comendo")
+
+#Herança simples: cachorro herda apenas de Animal
+class Cachorro(Animal):
+    def latir(self):
+        print("O cachorro está latindo")
+
+rex = Cachorro()
+rex.comer() #herdado
+rex.latir() 
+
+#Um exemplo legal de uma utilidade, seria na escola. Tem uma classe pai pessoa, que tem várias coisas. Aí tem uma classe familia que herda pessoa, mas tem funcionalidades a mais que professores não tem.
+
+#Uma herança multipla seria herdar de duas classes (pais) diferentes
+
+#Polimorfismo
+#varias classe c o msm Método, mas age diferente dependnedno do objeto que a executa
+
+#Polimorfismo com herana(sobrescrito de mpetodo)
+#Um exemplo dentro de herança
+class Ave:
+    def voar(self):
+                  print("A ave está voando...")
+
+class Pinguim(Ave):
+    def voar(self):
+        print("Pinguins não voam, eles nadam!")
+
+def iniciar_voo(ave):    #método solto
+    ave.voar()
+
+iniciar_voo(Ave())
+iniciar_voo(Pinguim())
+
+#Polimorfismo - Duck typing
+#Não precisa ser classe filha para ter o mesmo método
+
+class programador:
+    def trabalhar(self) :
+        return 'escrevendo código'
+    
+class estágiario:
+    def trabalhar(self) :
+        return 'errando e aprendendo'
+class robo:
+    def trabalhar(self) :
+        return 'processando dados 24/7'
+    
+def realizar_tarefa(entidade) :
+    print(entidade.trabalhar())
+
+realizar_tarefa(programador()) #esses parenteses no final, cria um objeto!!!Por isso que se pode usar assim - o python executa algo como:   obj = programador()
+realizar_tarefa(estágiario())
+realizar_tarefa(robo())
+
+print(programador().trabalhar())
+
+"""
+    Primeiro projeto maior - relacionado ao conteúdo orientação de objetos --- CarrinhoDeCompras.py
+"""
