@@ -116,7 +116,7 @@ rex.latir()
 #Polimorfismo
 #varias classe c o msm Método, mas age diferente dependnedno do objeto que a executa
 
-#Polimorfismo com herana(sobrescrito de mpetodo)
+#Polimorfismo com herana(sobrescrito de metodo)
 #Um exemplo dentro de herança
 class Ave:
     def voar(self):
