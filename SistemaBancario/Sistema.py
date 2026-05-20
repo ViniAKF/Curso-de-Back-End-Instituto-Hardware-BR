@@ -11,27 +11,7 @@ Código do desafio da aula 09/05
 
 
 import random
-
-class Conta():
-    def __init__(self,titular, saldo, numero_conta, limite ): 
-        self.titular = titular
-        self.saldo = saldo
-        self.numero_conta = numero_conta
-        self.limite = limite
-
-    def depositar(self,valor): 
-        self.saldo += valor
-
-    def sacar(self, valor):
-        if (self.saldo-valor) < (0 - self.limite):
-            print("Saldo insuficiente")
-        else:
-            self.saldo -= valor
-    
-    def exibir_conta(self):
-        print(f"Número: {self.numero_conta} | Nome: {self.titular} | Saldo: {self.saldo}")
-
-
+from Conta import Conta
 
 def main():
     op =1
@@ -127,3 +107,14 @@ if __name__ == "__main__":
 
 
     ###Tem que só que se ligar depois para ver se um número não precisa ser inteiro, ou float coisa assim, str...
+
+
+    """
+    20/05
+    Dividi o código por pastas
+    """
+
+    #VOu pesquisar no chtagpt até onde é interesante deixar a lógica dentro do métdodo. Por exemplo nesse código, no case 5 eu deixo quase toda a lógica no main, porque vejo que seria difícil colocar ela dentro de um método da classe conta por não ter disponível o dicionario.
+    #Maior parte da resposta está no novo arquivo - Armazenamento
+
+    #Quero fazer a interface gráfica disso aqui depois
