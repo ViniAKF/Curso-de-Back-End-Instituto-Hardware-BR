@@ -54,13 +54,13 @@ conexao.close()
 
 
 
-#Agora vamos pegar dados de dentro do banco ded ados e passar para a memória RAM da cpu para poder utilizar eles.
+#Agora vamos pegar dados de dentro do banco de dados e passar para a memória RAM da cpu para poder utilizar eles.
 conexao = sqlite3.connect("empresa.db")
 cursor = conexao.cursor()
 
 cursor.execute("SELECT * FROM produtos")
 
-produtos = cursor.fetchall()
+produtos = cursor.fetchall()              #create a list of tuples with the values of the database (each row is a tuple)
 
 for produto in produtos :
     print(produto)
@@ -99,7 +99,7 @@ WHERE id=?
 
 conexao.commit()
 
-print("Produto removido!")
+print("Produto removido!")  #At this case, I cant replace this ID anymore(but when I gonna print something by a loop, will isn´t take any error, because I will mada this in existing objects (for produto in produtos - example), so the number of ID that I had already excluded, will not apear )
 
 conexao.close
 
